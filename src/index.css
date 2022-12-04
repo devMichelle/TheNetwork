@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.the-network-bg{
+background-color: #F2F0EB;
+color: #CC9C5A;
+font-weight: bold;
+
+}
+
+.the-network-bg-white{
+    background-color: #fff;
+ 
+    }
+
+.btn-the-network{
+background-color: #121212;
+/* background-color: #CC9C5A; */
+border: none;
+
+}
+
+.bg-color__hover:hover {
+    /* background-color: #F2F0EB; */
+    background-image: linear-gradient(#F2F0EB, rgba(242, 240, 235, 0));
+    text-decoration: underline;
+    }
+
+.color__hover:hover {
+    background-color: #CC9C5A;
+    border-color: #CC9C5A;
+    }
+
+.max-width {
+    max-width: 1000;
+    }
+
+.text-color__hover:hover {
+    color: #CC9C5A;
+    
+    }
+
+
+.illustration-networking-image{
+    max-width: 85%;
+}
