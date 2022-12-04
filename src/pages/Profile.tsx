@@ -38,9 +38,6 @@ export default function Profile({}: Props) {
 
   const [userData, setUserData] = useState<UserDataType>();
 
-  console.log("Avatar........... ");
-  console.log(userData);
-
   const [followingAndFollowers, setFollowingAndFollowers] = useState({
     followers: [
       {
