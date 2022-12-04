@@ -72,10 +72,13 @@ const FindConnetions = () => {
   return (
     <>
       <Navbar title="TheNetWork" token={token} />
-      <div className="flex flex-col gap-5 md:flex-row  justify-center md:gap-20 lg:gap-20 shrink-0  mx-10 mt-20">
-        <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-5 md:flex-row  justify-center md:gap-10 lg:gap-10 shrink-0  mx-10 mt-20">
+        <div className="flex flex-col gap-10 ">
           {connectionsData.map((profile, index) => (
-            <div key={index} className="flex space-x-10">
+            <div
+              key={index}
+              className="flex space-x-10 hover:bg-slate-200 rounded-md px-10 py-2 hover:shadow"
+            >
               <div className="flex gap-5">
                 <div className="avatar placeholder">
                   <div className="bg-neutral-focus text-neutral-content rounded-full w-16">
@@ -90,43 +93,40 @@ const FindConnetions = () => {
                   </div>
                 </div>
                 <div className="shrink, grow-0">
-                  <h3 className="font-bold">
-                    <a
-                      href=""
-                      onClick={(e) => {
-                        e.preventDefault();
-                        navigate("/user-profile", {
-                          state: {
-                            profileName: profile.name,
-                            profileAvatar: profile.avatar,
-                            profileBanner: profile.banner,
-                          },
-                        });
-                        console.log("I am clicked");
-                      }}
-                    >
+                  {/* <h3 className="font-bold"> */}
+                  <a
+                    href=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate("/user-profile", {
+                        state: {
+                          profileName: profile.name,
+                          profileAvatar: profile.avatar,
+                          profileBanner: profile.banner,
+                        },
+                      });
+                      console.log("I am clicked");
+                    }}
+                  >
+                    <h3 className="font-bold text-color__hover">
                       {" "}
                       {profile.name}{" "}
-                    </a>
-                  </h3>
+                    </h3>
 
-                  {/* <h3 className="font-bold"><Link to="/user-profile" state={profile.name}> {profile.name} </Link></h3> */}
-                  <p>Student at Noroff | Oslo</p>
-                  <p className=" text-sm pt-1 font-bold">
-                    {profile._count.followers <= 0 ||
-                    profile._count.followers <= 1
-                      ? profile._count.followers + connectString.connection
-                      : profile._count.followers + connectString.connections}
-                  </p>
+                    {/* <h3 className="font-bold"><Link to="/user-profile" state={profile.name}> {profile.name} </Link></h3> */}
+                    <p>Student at Noroff | Oslo</p>
+                    <p className=" text-sm pt-1 font-bold">
+                      {profile._count.followers <= 0 ||
+                      profile._count.followers <= 1
+                        ? profile._count.followers + connectString.connection
+                        : profile._count.followers + connectString.connections}
+                    </p>
+                  </a>
                 </div>
               </div>
               <div className="hidden">follow button</div>
             </div>
           ))}
-        </div>
-
-        <div>
-          <p>0 Connections</p>
         </div>
       </div>
     </>

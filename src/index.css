@@ -35,7 +35,12 @@ border: none;
 
 .max-width {
     max-width: 1000;
+
     }
+    
+.bg-color__nav {
+    color: #121212;
+}
 
 .text-color__hover:hover {
     color: #CC9C5A;

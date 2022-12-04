@@ -24,7 +24,7 @@ const Navbar = ({ title, token, avatar, colorClassName, topMargin }: Props) => {
     <>
       <header className="the-network-bg shadow-lg">
         <div className="px-2 mx-auto pt-5 pb-3 max-width">
-          <div className="flex flex-col items-center sm:flex-row sm:items-end sm:justify-between ">
+          <div className="flex flex-col items-center sm:flex-row sm:items-end sm:justify-between max-width bg-color__nav ">
             <div className="mb-4 lg:mb-0">
               <a
                 onClick={() => {

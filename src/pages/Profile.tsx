@@ -38,6 +38,9 @@ export default function Profile({}: Props) {
 
   const [userData, setUserData] = useState<UserDataType>();
 
+  console.log("Avatar........... ");
+  console.log(userData);
+
   const [followingAndFollowers, setFollowingAndFollowers] = useState({
     followers: [
       {
@@ -73,8 +76,6 @@ export default function Profile({}: Props) {
         `${userData?.name}?_following=true&_followers=true`
       );
 
-      console.log("Followers...................");
-      console.log(response.data);
       setFollowingAndFollowers(response.data);
       return response.data;
     } catch (error) {
@@ -95,9 +96,7 @@ export default function Profile({}: Props) {
         `${userData?.name}?_following=true&_followers=true`
       );
 
-      console.log("ALL CONNECTION..");
       setAllConnections(getAllConnectionResponse.data);
-      console.log(allConnection);
     } catch (error) {
       console.log(error);
     }
@@ -109,8 +108,6 @@ export default function Profile({}: Props) {
         `${userData?.name}/posts`
       );
 
-      console.log("ALL PROFILE POST");
-      console.log(getProfilePostsResponse.data);
       return getProfilePostsResponse.data
         ? getProfilePostsResponse.data
         : noPostAvailable;
@@ -127,16 +124,14 @@ export default function Profile({}: Props) {
 
     try {
       const response = await DELETE_API.delete(`${postId}`);
-      console.log("Deleting...............");
+
       window.location.reload();
-      console.log(response.data);
     } catch (error) {
       console.log(error);
     }
   };
 
   useEffect(() => {
-    console.log("Calling useEffect in profile");
     const savedUserData = JSON.parse(localStorage.getItem("userData") || "");
     setUserData(savedUserData);
 
