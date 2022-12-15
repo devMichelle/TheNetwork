@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+# The Network (Project exam)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](project-exam2-screenshot.png)
 
-## Available Scripts
+The Network is a social media platform where people in tech can connect and share from their day to day life, projects and work. 
 
-In the project directory, you can run:
+Check out [The Network](https://thenetworkapp.netlify.app) 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Given brief for the project exam
 
-### `npm test`
+An existing Social Media company has approached you to create a brand new front end for their application. While they have a list of required features, the design and user experience has not been specified. Working with the official API documentation, plan, design and build a modern front end social media application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### The Network is built with
 
-### `npm run build`
+- [React.js](https://reactjs.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The API for this project is provided by Noroff and can be found in the [Noroff API documentation](https://noroff-api-docs.netlify.app/) under Social EndPoints. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Storage
 
-### `npm run eject`
+- [Firebase](https://firebase.google.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Planning and design tools
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Trello](https://trello.com/)
+- [Adobe XD](https://www.adobe.com/creativecloud.html)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Get Started
 
-## Learn More
+To get started, follow the steps below
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Install 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repo:
+
+```bash
+git clone git@github.com:Noroff-FEU-Assignments/project-exam-2-devMichelle.git
+```
+
+2. Install the dependencies by running npm install in terminal: 
+
+```
+npm install
+```
+
+### Running
+
+To run the website/app run the following commands in terminal:
+
+```bash
+npm run start
+```
+
+### Sign up
+
+To get access to this platform you first need to registrer for an account.
+
+- Create an account with an @noroff.no or @stud.noroff.no email account. 
+  ( e.g janedoe@noroff.no )
+
+If you already have an account you can skip this step and log in. 
+
+#### Guidelines
+
+- Registering for an account is free
+- Any posts created must be as real as possible to maintain the quality of the API
+- All posts and profiles must be user friendly
+
+
+
+## Contact
+
+[My LinkedIn page](https://www.linkedin.com/in/michelle-kristine-narverud-11052715b/)
