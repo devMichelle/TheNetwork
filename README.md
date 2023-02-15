@@ -6,7 +6,7 @@ The Network is a social media platform where people in tech can connect and shar
 
 Check out [The Network](https://thenetworkapp.netlify.app) 
 
-
+### Grade: A
 
 ## Given brief for the project exam
 
